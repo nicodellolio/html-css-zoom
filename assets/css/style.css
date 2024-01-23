@@ -46,26 +46,44 @@ footer.commands{
     color: #ffffff;
     display: flex;
     justify-content: space-between;
-    padding: 1rem 0;
+    padding: 1.5rem 0;
     font-size: 0.85rem;
 }
 
-.commands i{
-    font-size: 1.5rem;
+i{
+    font-size: 2.5rem;
 }
 
-nav.user_commands, nav.end_commands{
-    flex-grow: 1;
+.commands span{
+    margin-left: -40px;
+}
+
+nav.user_commands{
+    width: 15%;
     display: flex;
-    gap: 1rem;
+    gap: 2.5rem;
+    padding-left: 2rem;
+}
+
+nav.end_commands{
+    background-color: #4a4a4aFF;
+    color: red;
+    width: 7%;
+    text-align: center;
+    line-height: 4;
+    margin-right: 1rem;
 }
 
 nav.meeting_commands{
-    flex-grow: 4;
+    width: 78%;
+    display: flex;
     justify-content: center;
+    gap: 2.5rem;
 }
 
-div.mute, div.stop_video{
+div.icon{
+    display: flex;
     flex-direction: column;
+    text-align: center;
 }
 
