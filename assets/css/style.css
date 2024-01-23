@@ -4,7 +4,7 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif
 }
 
-main.grill{
+main.grid{
     background-color: black;
     width: 100vw;
     height: 90vh;
@@ -12,7 +12,7 @@ main.grill{
     justify-content: center;
 }
 
-div.grill{
+div.grid{
     width: 90%;
     display: flex;
     flex-wrap: wrap;
@@ -29,6 +29,24 @@ div.picture{
     margin: 4px 2px;
 }
 
+.speaker_view, .maximaze{
+    position: absolute;
+    top: 1rem;
+    background-color: rgba(128, 128, 128, 0.7);
+    color: #ffffff;
+    font-size: 10px;
+    padding: 0 0.5rem;
+    border-radius: 10px;
+}
+
+.speaker_view{
+    right: 5rem;
+    line-height: 2;
+}
+
+.maximaze{
+    right: 1rem;
+}
 
 aside.picture{
     position: absolute;
