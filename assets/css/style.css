@@ -4,6 +4,10 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif
 }
 
+header{
+    position: initial;
+}
+
 .speaker_view, .maximaze{
     position: absolute;
     top: 1rem;
@@ -16,7 +20,9 @@
 
 .speaker_view{
     right: 5rem;
-    line-height: 2;
+    vertical-align: middle;
+    display: flex;
+    align-items: center;
 }
 
 .maximaze{
@@ -26,26 +32,24 @@
 
 main.grid{
     background-color: black;
-    width: 100vw;
-    height: 94vh;
     display: flex;
     justify-content: center;
 }
 
 div.grid{
     width: 90%;
+    height: 94vh;
     display: flex;
     flex-wrap: wrap;
     padding: 6rem 0 3rem 0;
     line-height: 1rem;
+    overflow: overlay;
 }
 
 div.picture{
-    background-image: url(https://picsum.photos/1000/800);
-    width: calc(100%/7 - 4px);
-    height: calc(100%/5 - 12px);
+    width: 489px;
+    height: 332px;
     position: relative;
-    border-radius: 10px;
     margin: 4px 2px;
 }
 
@@ -57,7 +61,6 @@ aside.picture{
     color: #ffffff;
     font-size: 10px;
     padding: 0 0.5rem;
-    border-radius: 10px;
 }
 
 footer.commands{
@@ -66,7 +69,6 @@ footer.commands{
     color: #ffffff;
     display: flex;
     justify-content: space-between;
-    padding: 1.5rem 0;
     font-size: 0.85rem;
 }
 
@@ -82,7 +84,7 @@ nav.user_commands{
     width: 15%;
     display: flex;
     gap: 2.5rem;
-    padding-left: 2rem;
+    padding: 1.5rem 0 0 2rem;
 }
 
 nav.end_commands{
@@ -90,13 +92,14 @@ nav.end_commands{
     color: red;
     width: 7%;
     text-align: center;
-    line-height: 4;
-    margin-right: 1rem;
+    line-height: 6;
+    font-size: 1.25rem;
 }
 
 nav.meeting_commands{
     width: 78%;
     display: flex;
+    padding: 1.5rem 0;
     justify-content: center;
     gap: 2.5rem;
 }
